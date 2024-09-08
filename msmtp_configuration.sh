@@ -11,7 +11,7 @@ echo "Installation de msmtp-mta..."
 apt update && apt install -y msmtp msmtp-mta
 
 # Créer le groupe msmtp_users s'il n'existe pas déjà
-if ! getent group msmtp_users > /dev/null; then
+if ! grep "^msmtp_users:" /etc/group > /dev/null; then
     echo "Création du groupe msmtp_users..."
     groupadd msmtp_users
 fi
