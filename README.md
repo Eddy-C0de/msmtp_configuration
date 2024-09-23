@@ -24,7 +24,7 @@ Mot de passe en clair : Le mot de passe est stocké en texte clair dans les fich
 EWEMPLE DE CONFIGURATION : 
 Voici un exemple de configuration pour un compte Gmail :
 
-# Configuration pour le compte Gmail
+#Configuration pour le compte Gmail
 account        gmail
 auth           plain
 host           smtp.gmail.com
@@ -35,5 +35,5 @@ password       motdepasse
 tls            on
 tls_starttls   on
 
-# Définir le compte par défaut
+#Définir le compte par défaut
 account default : gmail
